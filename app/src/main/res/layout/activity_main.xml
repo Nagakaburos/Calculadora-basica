@@ -8,34 +8,56 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="399dp"
-        android:layout_height="407dp"
-        android:text="Primeiro número"
-        android:textSize="16sp"
+        android:id="@+id/txtResultadodasSoma"
+        android:layout_width="178dp"
+        android:layout_height="61dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/segundoNumero"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="160dp"
+        android:layout_height="78dp"
+        android:text="O resultado é:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="7dp" />
+        app:layout_constraintVertical_bias="0.842"
+        tools:layout_editor_absoluteX="125dp" />
 
     <TextView
         android:id="@+id/segundoNumero"
+        android:layout_width="403dp"
+        android:layout_height="481dp"
+        android:text="Primeiro número"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <TextView
+        android:id="@+id/txtPrimeiroN"
         android:layout_width="399dp"
         android:layout_height="407dp"
         android:text="Primeiro número"
-        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <EditText
-        android:id="@+id/txtN1"
-        android:layout_width="250dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_constraintVertical_bias="0.175"
+        tools:layout_editor_absoluteX="6dp" />
 
     <EditText
         android:id="@+id/txtN2"
@@ -43,38 +65,47 @@
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <EditText
+        android:id="@+id/txtN1"
+        android:layout_width="250dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="89dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="96dp"
-        android:layout_height="43dp"
+        android:layout_width="260dp"
+        android:layout_height="59dp"
         android:text="Somar"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="410dp" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="301dp" />
 
     <Button
         android:id="@+id/btsubtrair"
-        android:layout_width="119dp"
-        android:layout_height="48dp"
+        android:layout_width="259dp"
+        android:layout_height="58dp"
         android:text="Subtrair"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="479dp" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="360dp" />
 
     <Button
         android:id="@+id/btDividir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="261dp"
+        android:layout_height="63dp"
         android:text="Dividir"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="405dp" />
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="422dp" />
 
     <Button
         android:id="@+id/btMultiplicar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
         android:text="Multiplicar"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="479dp" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="485dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
