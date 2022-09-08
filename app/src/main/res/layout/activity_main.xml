@@ -81,6 +81,7 @@
         android:id="@+id/button"
         android:layout_width="260dp"
         android:layout_height="59dp"
+        android:onClick="somar"
         android:text="Somar"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="301dp" />
@@ -89,6 +90,7 @@
         android:id="@+id/btsubtrair"
         android:layout_width="259dp"
         android:layout_height="58dp"
+        android:onClick="subtrair"
         android:text="Subtrair"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="360dp" />
@@ -97,6 +99,7 @@
         android:id="@+id/btDividir"
         android:layout_width="261dp"
         android:layout_height="63dp"
+        android:onClick="dividir"
         android:text="Dividir"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="422dp" />
@@ -105,6 +108,7 @@
         android:id="@+id/btMultiplicar"
         android:layout_width="260dp"
         android:layout_height="60dp"
+        android:onClick="multiplicar"
         android:text="Multiplicar"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="485dp" />

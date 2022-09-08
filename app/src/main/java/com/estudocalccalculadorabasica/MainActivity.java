@@ -3,6 +3,7 @@ package com.estudocalccalculadorabasica;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -20,5 +21,30 @@ public class MainActivity extends AppCompatActivity {
         txtN2 = findViewById(R.id.txtN2);
         txtResultadodaSoma = findViewById(R.id.txtResultadodasSoma);
 
+    }
+
+    public void somar(View view) {
+        int valor1 = Integer.parseInt(txtN1.getText().toString());
+        int valor2 = Integer.parseInt(txtN2.getText().toString());
+        txtResultadodaSoma.setText(String.valueOf(valor1 + valor2));
+    }
+
+    public void subtrair(View view) {
+        int valor1 = Integer.parseInt(txtN1.getText().toString());
+        int valor2 = Integer.parseInt(txtN2.getText().toString());
+        txtResultadodaSoma.setText(String.valueOf(valor1 - valor2));
+
+    }
+
+    public void multiplicar(View view) {
+        int valor1 = Integer.parseInt(txtN1.getText().toString());
+        int valor2 = Integer.parseInt(txtN2.getText().toString());
+        txtResultadodaSoma.setText(String.valueOf(valor1 * valor2));
+    }
+
+    public void dividir(View view) {
+        int valor1 = Integer.parseInt(txtN1.getText().toString());
+        int valor2 = Integer.parseInt(txtN2.getText().toString());
+        txtResultadodaSoma.setText(String.valueOf(valor1 / valor2));
     }
 }
